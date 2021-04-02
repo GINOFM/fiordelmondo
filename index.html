@@ -23,6 +23,7 @@
   }
 
   body {
+    position: relative;
     font-family: 'Raleway', sans-serif !important;
     color: #323240 !important;
   }
@@ -93,7 +94,9 @@
   .navbar-dark .navbar-nav .nav-link:hover {
     color: #de4242;
   }
-
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: #4f4f5a;
+    }
   .btn-white {
     color: #de4242;
     background-color: #f8f9fa;
@@ -140,7 +143,7 @@
   }
 </style>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar">
   <div class="">
 
 
@@ -169,24 +172,25 @@
               </a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#">Productos</a>
-              <a class="nav-link fw-bold d-lg-none" href="#"><u>Productos</u></a>
+              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#productos">Productos</a>
+              <a class="nav-link fw-bold d-lg-none" href="#productos"><u>Productos</u></a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#">Marcas</a>
-              <a class="nav-link fw-bold d-lg-none" href="#"><u>Marcas</u></a>
+              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#aboutus">Quiénes somos</a>
+              <a class="nav-link fw-bold d-lg-none" href="#aboutus"><u>Quiénes somos</u></a>
+
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#">Distribución</a>
-              <a class="nav-link fw-bold d-lg-none" href="#"><u>Distribución</u></a>
+              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#marcas">Marcas</a>
+              <a class="nav-link fw-bold d-lg-none" href="#marcas"><u>Marcas</u></a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#">Quiénes somos</a>
-              <a class="nav-link fw-bold d-lg-none" href="#"><u>Quiénes somos</u></a>
+              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#distribucion">Distribución</a>
+              <a class="nav-link fw-bold d-lg-none" href="#distribucion"><u>Distribución</u></a>
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#">Contacto</a>
-              <a class="nav-link fw-bold d-lg-none" href="#"><u>Contacto</u></a>
+              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#contacto">Contacto</a>
+              <a class="nav-link fw-bold d-lg-none" href="#contacto"><u>Contacto</u></a>
             </li>
           </ul>
         </div>
@@ -232,7 +236,7 @@
 
     <!-- Productos -->
     <div class="px-4 py-5 my-5 text-center" data-aos="fade-right">
-      <h1 class="display-5 fw-bold">DESCUBRÍ NUESTRAS</h1>
+      <h1 class="display-5 fw-bold"  id="productos">DESCUBRÍ NUESTRAS</h1>
       <h1 class="display-5 fw-bold text-danger">CATEGORÍAS DE PRODUCTOS</h1>
     </div>
     <div class="container text-center">
@@ -298,7 +302,7 @@
     </div>
     <!-- Quienes Somos -->
     <div class="container px-4 py-5 my-5 text-center">
-      <h1 class="fw-bold text-danger">QUIÉNES SOMOS</h1>
+      <h1 class="fw-bold text-danger" id="aboutus">QUIÉNES SOMOS</h1>
       <h2 class="fst-italic">CRECIENDO DESDE HACE MÁS DE 60 AÑOS</h2>
       <img class="my-5" src="assets/img/linea.png" alt="">
       <div class="col-lg-8 mx-auto">
@@ -332,7 +336,7 @@
     <!-- Marcas  -->
     <div class="">
       <div class="container px-4 py-5 my-5 text-center" data-aos="fade-right">
-        <h1 class="pb-3 fw-bold text-danger">MARCAS CON LAS QUE TRABAJAMOS</h1>
+        <h1 class="pb-3 fw-bold text-danger" id="marcas">MARCAS CON LAS QUE TRABAJAMOS</h1>
         <h3 class="fst-italic">EXPERIENCIA TRABAJON CON LO MEJOR</h3>
         <img class="mt-5" src="assets/img/linea.png" alt="">
       </div>
@@ -397,7 +401,7 @@
     <div class="container">
       <div class="row py-5">
         <div class="col-lg-8" data-aos="fade-right">
-          <h1 class="display-5 fw-black lh-1 mb-1 text-danger">DISTRIBUIMOS</h1>
+          <h1 class="display-5 fw-black lh-1 mb-1 text-danger" id="distribucion">DISTRIBUIMOS</h1>
           <h1 class="display-5 fw-black lh-1 mb-1">EN LAS SIGUIENTES ZONAS</h1>
           <img class="mt-5" src="assets/img/linea.png" alt="">
         </div>
@@ -477,7 +481,7 @@
     <div class="container">
       <div class="row py-5">
         <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1500">
-          <h1 class="display-5 fw-black lh-1 mb-1 text-danger">CONTÁCTANOS</h1>
+          <h1 class="display-5 fw-black lh-1 mb-1 text-danger" id="contacto">CONTÁCTANOS</h1>
           <h1 class="display-5 fw-black lh-1 mb-1">POR NUESTRAS REDES SOCIALES</h1>
           <img class="my-5" src="assets/img/linea.png" alt="">
         </div>
@@ -543,6 +547,10 @@
     crossorigin="anonymous"></script>
     <script src="js/aos.js"></script>
     <script>
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#mainNavbar'
+      })
+
       AOS.init({
         delay:200,
         duration:1000,
