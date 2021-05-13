@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;0,700;0,900;1,700&display=swap"
+    rel="stylesheet">
+  <title>>Fiordelmondo-Panaderia</title>
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    position: relative;
+    font-family: 'Raleway', sans-serif !important;
+    color: #323240 !important;
+  }
+
+  :root {
+    --diagonal-section-offset: 50px;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(222,66,66, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: #de4242;
+  }
+
+  .diagonal-section {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @supports (clip-path: inset(50%)) {
+
+    .diagonal-section,
+    .diagonal-section-top.diagonal-section-bottom {
+      padding-top: calc(var(--diagonal-section-offset)/2);
+      padding-bottom: calc(var(--diagonal-section-offset)/2);
+      clip-path: polygon(0% 0%, 100% var(--diagonal-section-offset), 100% 100%, 0% calc(100% - var(--diagonal-section-offset)));
+    }
+
+    .diagonal-section--flip-x {
+
+      clip-path: polygon(0% var(--diagonal-section-offset), 100% 0%, 100% calc(100% - var(--diagonal-section-offset)), 0% 100%);
+    }
+
+    .diagonal-section--flip-x2 {
+      clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 91%);
+
+      }
+
+  }
+
+  .img-effect:hover {
+    box-shadow: 10px 10px 5px #00000021;
+    -moz-box-shadow: 0px 10px 5px #00000021;
+    -webkit-box-shadow: 0px 10px 5px #00000021;
+  }
+
+  .jumbotron {
+    background-image: url("assets/img/fondo.jpg")
+  }
+
+  .fw-black {
+    font-weight: 900 !important;
+  }
+
+  .fw-semibold {
+    font-weight: 600 !important;
+  }
+
+  .text-danger {
+    color: #de4242 !important;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #4f4f5a;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #de4242;
+  }
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: #4f4f5a;
+    }
+  .btn-white {
+    color: #de4242;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+
+  .btn-white:hover {
+    color: #de4242;
+    background-color: #e6e6e6;
+    border-color: #f9fafb;
+  }
+
+  .btn-check:focus+.btn-white,
+  .btn-white:focus {
+    color: #de4242;
+    background-color: #f9fafb;
+    border-color: #f9fafb;
+    box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
+  }
+
+  .btn-check:checked+.btn-white,
+  .btn-check:active+.btn-white,
+  .btn-white:active,
+  .btn-white.active,
+  .show>.btn-light.dropdown-toggle {
+    color: rgb(255, 0, 0);
+    background-color: #f9fafb;
+    border-color: #f9fafb;
+  }
+
+  .btn-check:checked+.btn-white:focus,
+  .btn-check:active+.btn-white:focus,
+  .btn-white:active:focus,
+  .btn-white.active:focus,
+  .show>.btn-white.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
+  }
+
+  .btn-white:disabled,
+  .btn-white.disabled {
+    color: #000;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+</style>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar">
+  <div class="">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark rounded" aria-label="Tenth navbar example">
+      <div class="container-fluid">
+        <div class="row d-lg-none" style="width: 100%;">
+          <div class="col">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+          <div class="col">
+            <div class="me-5">
+              <img src="assets/img/logo.jpg" alt="" height="45">
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="mainNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item me-2 d-none d-lg-block d-xl-block">
+              <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.jpg" alt="" height="45">
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#productos">Productos</a>
+              <a class="nav-link fw-bold d-lg-none" href="#productos"><u>Productos</u></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#aboutus">Quiénes somos</a>
+              <a class="nav-link fw-bold d-lg-none" href="#aboutus"><u>Quiénes somos</u></a>
+
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#marcas">Marcas</a>
+              <a class="nav-link fw-bold d-lg-none" href="#marcas"><u>Marcas</u></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#distribucion">Distribución</a>
+              <a class="nav-link fw-bold d-lg-none" href="#distribucion"><u>Distribución</u></a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link fw-bold d-none d-lg-block d-xl-block" href="#contacto">Contacto</a>
+              <a class="nav-link fw-bold d-lg-none" href="#contacto"><u>Contacto</u></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <div class="container px-5">
+      <div class="row g-5 pt-5">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1500">
+          <h1 class="display-5 fw-black lh-1 mb-1">PANADERÍA</h1>
+          <img class="mt-5" src="assets/img/linea.png" alt="">
+          <h4 class="fw-black lh-1 mt-3 text-danger">TODO PARA ELABORAR PRODUCTOS</h4>
+          <h4 class="fw-black lh-1 mt-3">PANIFICADOS DE CALIDAD</h4>
+        </div>
+      </div>
+    </div>
+    <!-- diagonal -->
+    <div id="fondo diagonal">
+      <div class="diagonal-section diagonal-section--flip-x"
+        style="background:#de4242; -webkit-transform: translateY(30px);">
+        <div class="container max-width-adaptive-sm">
+          <div class="text-center" style="height: 15px">
+          </div>
+        </div>
+      </div>
+      <div class="diagonal-section diagonal-section--flip-x2" style="background-image: url('assets/img/fondoChoco.jpg');">
+        <div class="container max-width-adaptive-sm">
+          <div class="text-center" style="height: 750px">
+          </div>
+        </div>
+      </div>
+      <div class="diagonal-section diagonal-section"
+        style="background:#4f4f5a; -webkit-transform: translateY(-30px);">
+        <div class="container max-width-adaptive-sm">
+          <div class="text-center" style="height: 15px">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quienes Somos -->
+    <div class="container px-4 py-5 my-5" data-aos="fade-right" data-aos-duration="1500">
+      <h1 class="display-5 fw-bold text-danger" id="aboutus">ELABORACIONES</h1>
+      <h2 class="display-5 fw-bold">ÚNICAS</h2>
+      <div>
+        <h3 class="fw-bold mb-3">Ofrecemos materias primas para la elaboración de productos de panadería y pizzerías<h3>
+        <h4 class=" mb-3">Los productos de Puratos garantizan elaboraciones características, de calidad y distinguidas que potencian tu producción.<br>
+          Disponemos de útiles de panaderías como paneras, batidores, cortantes, carros, cucharas , espátulas, fundas, picos, pinceles y moldes.</h4>
+      </div>
+
+    </div>
+  
+
+    
+    <!-- linea -->
+    <div>
+      <div class="mb-4"
+        style="width: auto;border-bottom: 2px solid rgb(235, 16, 16); -webkit-transform: translateY(-20px) rotate(-5deg); ">
+      </div>
+    </div>
+    <!-- linea -->
+    <!-- Contacto -->
+
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1500">
+          <h1 class="display-5 fw-black lh-1 mb-1 text-danger" id="contacto">CONTÁCTANOS</h1>
+          <h1 class="display-5 fw-black lh-1 mb-1">POR NUESTRAS REDES SOCIALES</h1>
+          <img class="my-5" src="assets/img/linea.png" alt="">
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col" data-aos="fade-right" data-aos-duration="1500">
+              <h2 class="fw-bold text-danger"><img class="me-2" src="assets/img/instagram.png" alt="">/fiordelmondobahia
+              </h2>
+            </div>
+            <div class="col" data-aos="fade-left" data-aos-duration="1500">
+
+              <h2 class="fw-bold text-danger"><img class="me-2" src="assets/img/facebook.png" alt="">/fiordelmondobahia
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ó ACERCATE A NUESTRA SUCURSAL EN BAHÍA BLANCA -->
+      <div class="container row pt-5">
+        <div class="py-5 col-lg-6" data-aos="fade-right" data-aos-duration="1500">
+          <h1 class="display-5 fw-black lh-1 mb-1">Ó ACERCATE A</h1>
+          <h1 class="display-5 fw-black lh-1 mb-1 text-danger">NUESTRA SUCURSAL</h1>
+          <h1 class="display-5 fw-black lh-1 mb-1">EN BAHÍA BLANCA</h1>
+          <img class="mt-5" src="assets/img/linea.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500">
+          <h1 class="fw-semibold lh-1 mb-1">Luis Maria Drago 1600</h1>
+          <h1 class="fw-semibold lh-1 mb-1">Bahía Blanca, Buenos Aires</h1>
+          <h1 class="fw-semibold lh-1 mb-1">Argentina</h1>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: transparent; width:auto;padding: 0; margin: 0">
+      <div class="mb-4"
+        style="width:auto;border-bottom: 10px solid rgb(235, 16, 16); -webkit-transform: translateY(20px) rotate(-5deg); ">
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="py-5">
+    <div class="container text-center py-3">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-danger">Todos los derechos Reservados</h2>
+          <h2>www.fiordelmondo.com.ar</h2>
+        </div>
+        <div class="col">
+          <img src="assets/img/logo.jpg" alt="" height="80"
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#mainNavbar'
+      })
+
+      AOS.init({
+        delay:200,
+        duration:1000,
+        once:true
+      });
+    </script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
